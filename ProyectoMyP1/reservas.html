@@ -1,0 +1,83 @@
+<html lang="es">
+
+            <meta charset="UTF-8">
+        
+        <title>Cerveceria Patagonia</title>
+        
+        <link rel="stylesheet" href="estilos/estilos.css"/>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+        
+    <body> 
+
+        <div class="topnav" id="myTopnav">
+          <a class="navbutton" href= "index.html">
+              <img src="imagenes/casita.png" width="15" height="15" />
+          </a> 
+          <a class="navbutton" href="menu.html">MENÚ</a>
+          <a class="navbutton" href= "nuestracerveza.html">NUESTRA CERVEZA</a>
+          <a class="navbutton" href= "salonprincipal.html">SALÓN PRINCIPAL</a>
+          <a class="navbutton" href= "tourcervecero.html">TOUR CERVECERO</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        </div>
+        </div>
+        
+        <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += "responsive";
+        } else {
+          x.className = "topnav";
+        }
+        }
+        </script>
+            
+        <h3> RESERVAS </h3>
+
+    
+            <center> <form action="gracias_por_contactarnos.html"> 
+              <br>
+              <br>
+            
+              <div class="main">
+                <!--MAIN-container-->
+                <div class="container">
+                  <h5>Para hacer su reserva, llene el siguiente formulario:</h5>
+            
+                  <form action="mail.php" enctype="multipart/form-data" method="post" name="formulario_html5" autocomplete="off">
+            
+                    <label for="nombre">Nombre</label></br>
+                    <input type="text" name="nombre" id="nombre" class="cajas"></br>
+                  
+                    <label for="telefono">Teléfono</label></br>
+                    <input type="number" name="telefono" id="telefono" class="cajas"></br>
+                    <label for="llegada">Fecha y hora de llegada</label></br>
+                    <input type="datetime-local" id="llegada" name="fecha-hora-llegada" class="cajas">
+                    </br>
+                 
+                    <label for="Cantidad de personas">Cantidad de personas</label></br>
+                   <select id="Cantidad de personas" class="cajas">
+                    <option value="0">(seleccione)</option>
+                    <option value="2-3">2-3</option>
+                    <option value="4-6">4-6</option>
+                    <option value="+6"> Más de 6 </option>   </br>
+                  </select>
+                </br>
+            
+            
+                <button class="submit" type="submit"> Enviar</button>
+                   
+                  </br>
+                </br>
+              
+              </form></center>
+
+    </body>
+</html>
